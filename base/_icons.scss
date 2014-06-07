@@ -1,0 +1,54 @@
+.icon {
+	@include cross-browser-inline-block;
+
+	-sprite-selector-for-group: spritesCommon;
+	-sprite-packer: vertical;
+	-sprite-location: url(../images/spritesCommon.png);
+
+
+	&:before{
+		padding-right: 25px;
+	}
+}
+
+.icon--16{
+	@extend .icon;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: bottom;
+}
+
+.icon--22{
+	@extend .icon;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	vertical-align: bottom;
+}
+
+.icon--after-text{
+	margin-left: 4px;
+}
+
+.icon--before-text{
+	margin-right: 4px;
+}
+.icon--before-text-2x{
+	margin-right: 8px;
+}
+
+// @include icon-face-a('.icon--twitter',				'icon-twitter');
+// @include icon-face-a('.icon--facebook',				'icon-facebook');
+// @include icon-face-a('.icon--gplus',				'icon-gplus');
+
+// @include icon-face-a('.icon--arrow-left',			'icon-arrow-left');
+// @include icon-face-a('.icon--x',					'icon-x');
+// @include icon-face('.icon--tel', 	'icon_16_tel');
+
+
+
+
+
+
+
